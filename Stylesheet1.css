@@ -1,3 +1,4 @@
 #copyright {color:yellow }
-#firstsection{ border: 1px solid gray;width: 50%; height: 50%;}
-#secondsection{ border: 10px solid gray;position: relative; right: 0%;}
+#firstsection{ border: 1px solid gray;width: 50%; height: 45%;}
+#secondsection{ border: 1px solid gray;width:50%; position: relative;}
+#form{position: relative;left: 1000px;bottom: 500px; width:20%}
