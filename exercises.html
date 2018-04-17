@@ -80,14 +80,22 @@
 <br>
     
   First name:<br>
-    <input type="text" name="firstname"><br>
+    <input id= "firstname"  type="text" name="firstname"><br>
     age:<br>
-    <input type="text" name="age"><br>
+    <input id = "age" type="text" name="age"><br>
     ocupation:<br>
-    <input type="text" name="ocupation">
+    <input id = "ocupation" type="text" name="ocupation">
     <input type="button" onclick="addperson()" value="addperson"/>
 <script>
-    
+    function addperson(){
+        var newobject = {};
+      newobject.name = document.getElementById("firstname").value;
+      newobject.age = document.getElementById("age").value;
+      newobject.ocupation = document.getElementById("ocupation").value;
+
+      alert(newobject);
+    }
+   
 </script>
 </body>
 </html>
