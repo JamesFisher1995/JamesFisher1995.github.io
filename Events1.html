@@ -1,0 +1,45 @@
+<html>
+<head> 
+<title>Variables2</title>
+<div id="navigationbar">
+        <ul>
+          <li class="nav"><a href="index.html">Home</a></li>
+          <li class="nav"><a href="aboutme.html">About me</a></li>
+          <li class="nav"><a href="projectlist.html">Project list</a></li>
+          <li class="nav"><a href="exercises.html">exercises</a></li>
+        </ul> 
+  </div>
+<style>
+ 
+            .nav {
+                display: inline;margin:10px;
+            }
+          
+        </style>
+</head>
+
+<header>
+        <h1>Events1</h1>
+        </header>
+        <hr>
+<body background="Background-Blue-fade.png"> 
+     <script>
+        var object = {name:"james",age:23,ocupation:"tester"};
+        var output=object.name + " " + object.age + " " + object.ocupation + " ";
+       document.write(output);
+    
+    </script>
+
+
+        <script type = "text/javascript">
+            //events1
+                   function increaseage () {
+                    ++object.age;
+                    var output2=object.name + " " + object.age + " " + object.ocupation;
+                     alert(output2);   
+                   }
+            </script>
+            <input type="button" onclick="increaseage()" value="increaseage"/>
+    
+</body>
+</html>

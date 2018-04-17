@@ -1,0 +1,50 @@
+<html>
+<head> 
+<title>Variables2</title>
+<div id="navigationbar">
+        <ul>
+          <li class="nav"><a href="index.html">Home</a></li>
+          <li class="nav"><a href="aboutme.html">About me</a></li>
+          <li class="nav"><a href="projectlist.html">Project list</a></li>
+          <li class="nav"><a href="exercises.html">exercises</a></li>
+        </ul> 
+  </div>
+<style>
+ 
+            .nav {
+                display: inline;margin:10px;
+            }
+          
+        </style>
+</head>
+
+<header>
+        <h1>Events1</h1>
+        </header>
+        <hr>
+<body background="Background-Blue-fade.png"> 
+     
+
+        //functions3events2  
+        First name:<br>
+          <input id= "firstname"  type="text" name="firstname"><br>
+          age:<br>
+          <input id = "age" type="text" name="age"><br>
+          ocupation:<br>
+          <input id = "ocupation" type="text" name="ocupation">
+          <input type="button" onclick="addperson()" value="addperson"/>
+      <script>
+          function addperson(){
+              var newobject = {};
+            newobject.name = document.getElementById("firstname").value;
+            newobject.age = document.getElementById("age").value;
+            newobject.ocupation = document.getElementById("ocupation").value;
+            
+            var output3 = "new person" + "  " + "name:" + newobject.name + "  " + "age:" + newobject.age + "   " + "ocupation:" + newobject.ocupation;
+            console.log(output3);
+          }
+         
+      </script>
+    
+</body>
+</html>

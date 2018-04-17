@@ -1,0 +1,43 @@
+<html>
+<head> 
+<title>Functions2</title>
+<div id="navigationbar">
+        <ul>
+          <li class="nav"><a href="index.html">Home</a></li>
+          <li class="nav"><a href="aboutme.html">About me</a></li>
+          <li class="nav"><a href="projectlist.html">Project list</a></li>
+          <li class="nav"><a href="exercises.html">exercises</a></li>
+        </ul> 
+  </div>
+<style>
+ 
+            .nav {
+                display: inline;margin:10px;
+            }
+          
+        </style>
+</head>
+
+<header>
+        <h1>Functions2</h1>
+        </header>
+        <hr>
+<body background="Background-Blue-fade.png"> 
+     
+     <script>
+        //function2
+        function sumfunction(a,b,c){
+            var i,
+             n=arguments.length,
+               total=0;
+         for(i=0;i<n; i++){
+             total+=arguments[i];
+         }
+         return total;
+        }
+      var t = sumfunction(1,2,3);
+      document.write(t);
+    </script>
+    
+</body>
+</html>

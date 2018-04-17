@@ -21,8 +21,8 @@
             }
         
         </style>
-        <script>alert("hello world")</script>
-        
+
+
 </head>
 
 <header>
@@ -30,72 +30,20 @@
         </header>
         <hr>
 <body background="Background-Blue-fade.png"> 
-<script>//variables1
-    var keyword = "something"
-    alert(keyword);
-    console.log(keyword);
-    document.write(keyword);
-</script>
-<script>
-      //function1
-      function squarefunction(v1){
-          return v1*v1; }
-       var x = squarefunction(2);
-       document.write(x);
-</script>
-<script>
-    //function2
-    function sumfunction(a,b,c){
-        var i,
-         n=arguments.length,
-           total=0;
-     for(i=0;i<n; i++){
-         total+=arguments[i];
-     }
-     return total;
-    }
-  var t = sumfunction(1,2,3);
-  document.write(t);
-</script>
-<script>
-    //variables2
-    var object = {name:"james",age:23,ocupation:"tester"};
-    var output=object.name + " " + object.age + " " + object.ocupation + " ";
-   document.write(output);
-   object.name = "jeff"
-   var output=object.name + " " + object.age + " " + object.ocupation;
-   document.write(output);
-</script>
+        <a href="creatingascript.html">creating a script</a>
+        <br>
+        <a href="variables1.html">variables1</a>
+        <br>
+        <a href="functions1.html">functions1</a>
+        <br>
+        <a href="functions2.html">functions2</a>
+        <br>
+        <a href="variables2.html">variables2</a>
+        <br>
+        <a href="Events1.html">events1</a>      
+        <br>
+        <a href="Functions3events2.html">Functions3events2</a>
+        <br>
 
-<script type = "text/javascript">
-//events1
-       function increaseage () {
-        ++object.age;
-        var output2=object.name + " " + object.age + " " + object.ocupation;
-         alert(output2);   
-       }
-</script>
-<input type="button" onclick="increaseage()" value="increaseage"/>
-<br>
-<br>
-    
-  First name:<br>
-    <input id= "firstname"  type="text" name="firstname"><br>
-    age:<br>
-    <input id = "age" type="text" name="age"><br>
-    ocupation:<br>
-    <input id = "ocupation" type="text" name="ocupation">
-    <input type="button" onclick="addperson()" value="addperson"/>
-<script>
-    function addperson(){
-        var newobject = {};
-      newobject.name = document.getElementById("firstname").value;
-      newobject.age = document.getElementById("age").value;
-      newobject.ocupation = document.getElementById("ocupation").value;
-
-      alert(newobject);
-    }
-   
-</script>
 </body>
 </html>
