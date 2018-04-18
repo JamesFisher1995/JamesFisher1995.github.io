@@ -23,12 +23,32 @@
         </header>
         <hr>
 <body background="Background-Blue-fade.png"> 
+
+    First name:<br>
+    <input id= "number"  type="number" name="number">
+
+    
       <script>
     function isdivide(){
+        var n = document.getElementById("number").value
+        newnum = n
+        for( count = 0;newnum!=1;count++){
+              
+              
+                if(newnum%3==0){
+                  console.log(newnum/3)}
+                  else(n-1)
+              }
+              
+        }
         
-    }
+    
+                 
+    
 
       </script> 
-    
+    <input type="button" onclick="isdivide()"" value="go"/>  
+
+
 </body>
 </html>
