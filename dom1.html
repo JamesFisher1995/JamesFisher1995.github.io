@@ -1,0 +1,62 @@
+<html>
+<head> 
+<title>dom1</title>
+<div id="navigationbar">
+        <ul>
+          <li class="nav"><a href="index.html">Home</a></li>
+          <li class="nav"><a href="aboutme.html">About me</a></li>
+          <li class="nav"><a href="projectlist.html">Project list</a></li>
+          <li class="nav"><a href="exercises.html">exercises</a></li>
+        </ul> 
+  </div>
+<style>
+ 
+            .nav {
+                display: inline;margin:10px;
+            }
+          
+        </style>
+</head>
+
+<header>
+        <h1>dom1</h1>
+        </header>
+        <hr>
+<body background="Background-Blue-fade.png"> 
+        <input type="button" onclick="createptag()" value="createp"/>
+        <br>
+        <input id= "textbox" type="text" name="textbox">
+        <br>
+        <input type="button" onclick="editptag()" value="edit"/>
+        <br>
+        <input type="button" onclick="deleteptag()" value="del"/>
+        <br>
+
+          <script>
+           function createptag(){
+             var newp = document.createElement("p"); 
+             var newContent = document.createTextNode("p"); 
+             newp.appendChild(newContent);  
+             var currentp = document.getElementById("p"); 
+              document.body.insertBefore(newp, currentp); 
+              newp.setAttribute("id", "p7");
+           }
+           function editptag(){
+            document.getElementById("p7").innerHTML = document.getElementById("textbox").value;
+           }
+              
+           function deleteptag(){
+              var child = document.getElementById("p7");
+                child.removeChild(child.childNodes[0]);
+                
+
+              }
+
+          </script>
+    
+       
+  
+
+  
+</body>
+</html>
