@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   <link href="stylesheet.css" rel = "stylesheet" type = "text/css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td> <input id = "input1" type = "text" value=""> </td>
+                <td><p id="symbol"></p></td>
+                <td>  <input id = "input2" type = "text" value=""></td> 
+            </tr>
+
+            <tr>
+                <td><p>=</p></td>
+                <td class="answer" colspan = "2"> <p id= "answer">  </p> </td>
+            </tr>
+
+            <tr>
+                    <td> <button id="plusbtn"  type = "button" onclick="plusinput()"> +</button></td>
+                    <td><button id="minubtn"  type = "button" onclick="minuinput()"> -</button></td> 
+                    <td></td>
+            </tr>
+
+            <tr>
+                    <td><button id="multiplybtn"  type = "button" onclick="multiplyinput()">*</button></td>
+                    <td><button id="dividebtn"  type = "button" onclick="divideinput()"> /</button></td>
+                    <td></td>
+            </tr>
+
+</table>
+
+
+
+
+
+        <footer>
+            <script>
+               function plusinput(){
+                    var ans = Number((document.getElementById("input1").value)) + Number((document.getElementById("input2").value));
+                    document.getElementById("answer").innerHTML = ans;
+                    document.getElementById("symbol").innerHTML = "+";
+                    console.log(ans);
+               }
+                 
+                function minuinput(){
+                    var ans = Number((document.getElementById("input1").value)) - Number((document.getElementById("input2").value));
+                    document.getElementById("answer").innerHTML = ans;
+                    document.getElementById("symbol").innerHTML = "-";
+                    console.log(ans);
+               }
+               function multiplyinput(){
+                    var ans = Number((document.getElementById("input1").value)) * Number((document.getElementById("input2").value));
+                    document.getElementById("answer").innerHTML = ans;
+                    document.getElementById("symbol").innerHTML = "*";
+                    console.log(ans);
+               } 
+
+                  function divideinput(){
+                    var ans = Number((document.getElementById("input1").value)) / Number((document.getElementById("input2").value));
+                    document.getElementById("answer").innerHTML = ans;
+                    document.getElementById("symbol").innerHTML = "/";
+                    console.log(ans);
+               } 
+
+            </script>
+        </footer>
+    </body>
+
+</html>
