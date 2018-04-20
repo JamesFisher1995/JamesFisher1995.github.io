@@ -1,0 +1,61 @@
+<html> 
+<head> 
+
+</head>
+<body>
+
+<input id = "number" type="number" name="number">
+<br/>
+
+<button id = "ym" type="button" onclick="ym()">y - m</button>
+<br/>
+<button id = "yd" type="button"  onclick="yd()">y -d</button>
+<br/>
+<button id = "my" type="button"  onclick="my()">m - y</button>
+<br/>
+<button id= "md" type="button" onclick="md()">m - d </button>
+<br/>
+<button id = "dy" type="button" onclick="dy()">d - y</button>
+<br/>
+<button id = "dm" type="button" onclick="dm()">d - m</button>
+ <p id = "result"> 
+
+ </p>
+<script>
+    function ym(){
+         year1 = document.getElementById("number").value;
+               month1=year1*12
+               document.getElementById("result").innerHTML=year1 + " years converts to " + month1 + " months";
+    }
+    function yd(){
+         year2 = document.getElementById("number").value;
+               days1=year2*365
+               document.getElementById("result").innerHTML=year2 + " years converts to " + days1 + " days ";
+    }
+    function my(){
+         month2 = document.getElementById("number").value;
+               year3=month2/12
+               document.getElementById("result").innerHTML=month2 + " months converts to " + year3 + " years ";
+    }
+    function md(){
+         month3 = document.getElementById("number").value;
+               day2=month3*30
+               document.getElementById("result").innerHTML=month3 + " months converts to " + day2 + " days ";
+    }
+    function dy(){
+         day3 = document.getElementById("number").value;
+               year4=day3/365
+               document.getElementById("result").innerHTML=day3 + " days converts to " + year4 + " years ";
+    }
+    function dm(){
+         day4 = document.getElementById("number").value;
+               month4=day4/30
+               document.getElementById("result").innerHTML= day4 + " days converts to " + month4 + " months " ;
+    }
+
+
+
+</script>
+
+</body>
+</html> 
